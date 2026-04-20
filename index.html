@@ -1,0 +1,69 @@
+* {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  animation: fillMove 2s infinite alternate;
+}
+
+@keyframes fillMove {
+  from {
+    width: 75%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 16px 28px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  color: white;
+  box-shadow: 0 10px 20px rgba(34,197,94,0.4);
+}
+
+#yesBtn:hover {
+  transform: scale(1.08);
+}
+
+#noBtn {
+  background: linear-gradient(90deg, #ef4444, #b91c1c);
+  color: white;
+  position: relative;
+}
+
+#resultText {
+  color: #fde68a;
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
+  .wallet-img {
+    width: 100px;
+  }
+}
