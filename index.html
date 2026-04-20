@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tolong Kaka Rina 💸</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Background layer -->
+  <div id="bg"></div>
+
+  <!-- Hujan uang canvas -->
+  <canvas id="rain-canvas"></canvas>
+
+  <!-- Confetti container -->
+  <div id="confetti-container"></div>
+
+  <!-- Fake notifikasi transfer -->
+  <div id="fake-notif">
+    <div class="notif-icon">🏦</div>
+    <div class="notif-content">
+      <div class="notif-app">🔔 Mobile Banking</div>
+      <div class="notif-msg">Transfer Masuk — Rp 500.000</div>
+      <div class="notif-sub">Dari: *** Kaka Rina *** · Baru saja</div>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app">
+
+    <!-- ======= MAIN CARD ======= -->
+    <div class="card" id="main-card">
+
+      <div class="wallet-emoji">👛</div>
+
+      <h1>Kaka Rina yang cantik, adakah pencerahan di akhir bulan yang suram ini karena entah kenapa uang saya habis begitu saja?</h1>
+
+      <p class="subtitle">
+        "Saldo menipis, dompet mengering,<br>mie instan mulai memanggil."
+      </p>
+
+      <!-- Progress bar kesedihan -->
+      <div class="progress-section">
+        <div class="progress-label">
+          <span>😭 Tingkat Kesedihan Akhir Bulan</span>
+          <span>87%</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Saldo counter -->
+      <div class="saldo-section">
+        <span class="saldo-label">💳 Saldo BCA tersisa:</span>
+        <span class="saldo-amount" id="saldo-display">Rp 500.000</span>
+      </div>
+
+      <!-- Tombol -->
+      <div class="btn-group">
+        <button class="btn btn-yes" id="btn-yes">💸 Kasih Uang Sekarang</button>
+        <!-- Placeholder biar layout tetap rapi saat tombol no kabur -->
+        <div id="btn-no-placeholder" style="width:120px;height:44px;"></div>
+      </div>
+
+      <p class="footer-text">Web ini dibuat dalam keadaan dompet kritis. Sumber daya: secangkir air putih &amp; semangat yang tersisa.</p>
+    </div>
+
+    <!-- ======= SUCCESS SCREEN ======= -->
+    <div id="success-screen">
+      <div class="success-emoji">🎉</div>
+      <h2 class="success-title">Terima kasih<br>Kaka Rina!</h2>
+      <p class="success-subtitle">
+        Semoga rezekinya makin lancar, dompetnya makin tebal,
+        dan transferannya deras seperti <em>air terjun Niagara</em>. 💚
+      </p>
+      <div class="btn-small-group">
+        <button class="btn-small btn-transfer" id="btn-transfer">💸 Transfer Lagi</button>
+        <button class="btn-small btn-sad" id="btn-sad">😭 Kembali Sedih</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tombol "Nanti Ya" yang kabur — di luar card, fixed -->
+  <button class="btn btn-no" id="btn-no">🙅 Nanti Ya</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
